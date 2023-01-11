@@ -1,0 +1,64 @@
+#anecdoteContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  gap: 35px;
+  margin: auto;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#anecdoteContainer > button {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #ff7f57;
+  border: none;
+  border-radius: 10px;
+  min-height: 35px;
+  min-width: 255px;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+#anecdoteContainer > button:hover {
+  color: #ffffff;
+  background-color: #e54a1b;
+}
+
+.darkMode > main > #anecdoteContainer > button {
+  color: #000000;
+}
+
+.darkMode > main > #anecdoteContainer > #anecdoteBox {
+  background-color: #343434;
+}
+
+.darkMode > main > #anecdoteContainer > #anecdoteBox > p {
+  color: #ffffff;
+}
+
+#anecdoteBox {
+  background-color: #ededed;
+  border-radius: 10px;
+  height: 25vh;
+  width: 50vw;
+  min-width: 255px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+#anecdoteBox > h3 {
+  color: #ff7f57;
+  font-size: 18px;
+}
+
+p {
+  font-size: 25px;
+  color: #000000;
+  font-style: italic;
+  text-transform: capitalize;
+}

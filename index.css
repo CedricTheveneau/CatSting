@@ -4,13 +4,24 @@
   width: 80%;
   gap: 35px;
   margin: auto;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.darkMode > main > #statsContainer > .buckets {
+  background-color: #343434;
+}
+
+.darkMode > main > #statsContainer > .buckets > .statNumbers {
+  color: #ffffff;
 }
 
 .buckets {
-  background-color: #343434;
+  background-color: #ededed;
   border-radius: 10px;
   height: 25vh;
-  width: 33vw;
+  width: 25vw;
+  min-width: 300px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -24,7 +35,7 @@
 
 .statNumbers {
   font-size: 50px;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 25px;
   font-style: italic;
   text-transform: capitalize;

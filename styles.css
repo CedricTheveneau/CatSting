@@ -19,6 +19,10 @@ body {
   overflow: hidden;
 }
 
+header {
+  max-height: 66px;
+}
+
 .darkMode {
   background-color: #1c1b1b;
 }

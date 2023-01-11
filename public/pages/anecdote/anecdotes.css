@@ -20,6 +20,7 @@
   min-width: 255px;
   cursor: pointer;
   transition: 250ms;
+  transition: color 1000ms;
 }
 
 #anecdoteContainer > button:hover {
@@ -29,14 +30,17 @@
 
 .darkMode > main > #anecdoteContainer > button {
   color: #000000;
+  transition: 1000ms;
 }
 
 .darkMode > main > #anecdoteContainer > #anecdoteBox {
   background-color: #343434;
+  transition: 500ms;
 }
 
 .darkMode > main > #anecdoteContainer > #anecdoteBox > p {
   color: #ffffff;
+  transition: 3000ms;
 }
 
 #anecdoteBox {
@@ -61,4 +65,5 @@ p {
   color: #000000;
   font-style: italic;
   text-transform: capitalize;
+  transition: 3000ms;
 }

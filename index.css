@@ -10,10 +10,12 @@
 
 .darkMode > main > #statsContainer > .buckets {
   background-color: #343434;
+  transition: 500ms;
 }
 
 .darkMode > main > #statsContainer > .buckets > .statNumbers {
   color: #ffffff;
+  transition: 3000ms;
 }
 
 .buckets {
@@ -26,6 +28,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  transition: 500ms;
 }
 
 .buckets > h3 {
@@ -39,4 +42,5 @@
   margin-bottom: 25px;
   font-style: italic;
   text-transform: capitalize;
+  transition: 3000ms;
 }

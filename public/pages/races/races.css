@@ -1,0 +1,156 @@
+#raceContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  gap: 35px;
+  margin: auto;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.darkMode > main > #raceContainer > #racesBox {
+  background-color: #343434;
+  transition: 500ms;
+}
+
+.darkMode > main > #raceContainer > #racesBox > #results > p {
+  color: #ffffff;
+  transition: 500ms;
+}
+
+.darkMode > main > #raceContainer > #racesBox > #races > .raceSelection {
+  color: #ffffff;
+  transition: 1000ms;
+}
+
+.darkMode > main > #raceContainer > #infoBox {
+  background-color: #343434;
+  transition: 500ms;
+}
+
+.darkMode > main > #raceContainer > #infoBox > p {
+  color: #ffffff;
+  transition: 3000ms;
+}
+
+#racesBox {
+  background-color: #ededed;
+  border-radius: 10px;
+  width: 25vw;
+  min-width: 255px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: 500ms;
+}
+
+#racesBox > #results > h3 {
+  color: #ff7f57;
+  font-size: 18px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#racesBox > #results > p {
+  font-size: 16px;
+  color: #000000;
+  font-style: italic;
+  text-transform: capitalize;
+  position: absolute;
+  top: 22px;
+  left: 82px;
+  transition: 500ms;
+}
+
+#racesBox > #filters {
+  padding-top: 60px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#racesBox > #filters > select {
+  background-color: #ff7f57;
+  border: none;
+  border-radius: 6px;
+  height: 25px;
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+}
+
+#racesBox > #races {
+  border: none;
+  padding-top: 10px;
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+#racesBox > #races > .raceSelection {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-transform: capitalize;
+  transition: 500ms;
+}
+
+#racesBox > #races > .raceSelection:hover {
+  background-color: #ff7f57;
+  color: #ffffff;
+}
+
+#racesBox > #races > .raceSelection:first-child:hover {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#racesBox > #races > .raceSelection:last-child:hover {
+  border-radius: 0px 0px 10px 10px;
+}
+
+#racesBox > #races > .raceSelection.active {
+  background-color: #ff7f57;
+  color: #ffffff;
+}
+
+#racesBox > #races > .raceSelection:first-child.active {
+  border-radius: 10px 10px 0px 0px;
+}
+
+#racesBox > #races > .raceSelection:last-child.active {
+  border-radius: 0px 0px 10px 10px;
+}
+
+#infoBox {
+  background-color: #ededed;
+  border-radius: 10px;
+  height: 25vh;
+  width: 50vw;
+  min-width: 255px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: 500ms;
+}
+
+#infoBox > h3 {
+  color: #ff7f57;
+  font-size: 18px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#infoBox > p {
+  font-size: 25px;
+  color: #000000;
+  font-style: italic;
+  text-transform: capitalize;
+  transition: 3000ms;
+}

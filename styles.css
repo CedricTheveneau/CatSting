@@ -16,6 +16,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .darkMode {
@@ -176,7 +177,7 @@ nav > button > svg {
 
   #menuHamburger.active > #menuSandwich > #upperlayer {
     transition: 0.5s ease-in-out;
-    transform: rotate(45deg) translateY(14px);
+    transform: rotate(45deg) translateY(15px);
   }
 
   #menuHamburger.active > #menuSandwich > #lowerlayer {

@@ -9,35 +9,7 @@ hambMenu.addEventListener("click", () => {
 
 // Dark mode
 
-//! Working V1
-/*let themeToggle = document.getElementById("themeToggle");
-let themeToggle2 = document.getElementById("themeToggle2");
-let sun = document.getElementById("sun");
-let moon = document.getElementById("moon");
-let sun2 = document.getElementById("sun2");
-let moon2 = document.getElementById("moon2");
-let bodyTheme = document.getElementsByTagName("body");
-themeToggle.addEventListener("click", () => {
-  // bodyTheme[0] represents the body tag itself, not the object body as a whole
-  bodyTheme[0].classList.toggle("darkMode");
-  bodyTheme[0].classList.toggle("lightMode");
-  sun.classList.toggle("hide");
-  sun2.classList.toggle("hide");
-  moon.classList.toggle("hide");
-  moon2.classList.toggle("hide");
-});
-
-themeToggle2.addEventListener("click", () => {
-  // bodyTheme[0] represents the body tag itself, not the object body as a whole
-  bodyTheme[0].classList.toggle("darkMode");
-  bodyTheme[0].classList.toggle("lightMode");
-  sun.classList.toggle("hide");
-  sun2.classList.toggle("hide");
-  moon.classList.toggle("hide");
-  moon2.classList.toggle("hide");
-});*/
-
-//? Test V2
+//? Working V2
 
 let themeToggleGlobal = document.querySelectorAll(".themeToggles");
 console.log(themeToggleGlobal);
@@ -51,19 +23,12 @@ themeToggleGlobal.forEach((toggle) => {
     // bodyTheme[0] represents the body tag itself, not the object body as a whole
     bodyTheme[0].classList.toggle("darkMode");
     bodyTheme[0].classList.toggle("lightMode");
-    suns[(0, 1)].classList.toggle("hide");
-    moons[(0, 1)].classList.toggle("hide");
+    suns[0].classList.toggle("hide");
+    moons[0].classList.toggle("hide");
+    suns[1].classList.toggle("hide");
+    moons[1].classList.toggle("hide");
   });
 });
-/*themeToggleGlobal.addEventListener("click", () => {
-  // bodyTheme[0] represents the body tag itself, not the object body as a whole
-  bodyTheme[0].classList.toggle("darkMode");
-  bodyTheme[0].classList.toggle("lightMode");
-  sun.classList.toggle("hide");
-  sun2.classList.toggle("hide");
-  moon.classList.toggle("hide");
-  moon2.classList.toggle("hide");
-});*/
 
 // Cookies to save preferences over light/dark mode
 

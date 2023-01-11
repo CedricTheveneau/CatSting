@@ -1,6 +1,6 @@
 # CatSting
 
-Catsting is a cat racing bet platform made with HTML/CSS/JS
+Catsting is platform that helps you learn more about cats made with HTML/CSS/JS
 
 It is composed of 3 main pages:
 

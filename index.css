@@ -1,0 +1,31 @@
+#statsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  gap: 35px;
+  margin: auto;
+}
+
+.buckets {
+  background-color: #343434;
+  border-radius: 10px;
+  height: 25vh;
+  width: 33vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buckets > h3 {
+  color: #ff7f57;
+  font-size: 18px;
+}
+
+.statNumbers {
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-style: italic;
+  text-transform: capitalize;
+}

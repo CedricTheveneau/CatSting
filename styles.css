@@ -26,7 +26,8 @@ body {
   background-color: #f9f8fc;
 }
 
-header {
+nav {
+  z-index: 2000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +36,7 @@ header {
   padding-inline: 1.5%;
 }
 
-header > ul {
+nav > ul {
   width: 30%;
   list-style: none;
   display: flex;
@@ -43,31 +44,85 @@ header > ul {
   justify-content: space-between;
 }
 
-header > ul > li > a {
+nav > ul > li > a {
   color: #000000;
   text-decoration: none;
   font-size: 16px;
   transition: 350ms;
 }
 
-header > ul > li > a:hover {
+nav > ul > li > a:hover {
   font-weight: bold;
 }
 
-header > ul > li:nth-child(1) > a {
+nav > ul > li:nth-child(1) > a {
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
   transition: 500ms;
 }
 
-header > ul > li:nth-child(1) > a:hover {
+nav > ul > li:nth-child(1) > a:hover {
   color: #000000;
 }
 
-header > button {
+nav > button {
   display: flex;
   width: 10%;
+  background: none;
+  border: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav > button > svg {
+  cursor: pointer;
+}
+
+.hamMenu {
+  background-color: #dadada;
+  position: relative;
+  transform: translateX(200%);
+}
+
+.hamMenu.active {
+  display: block !important;
+  animation: smoothslidein 500ms forwards;
+}
+
+@keyframes smoothslidein {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hamMenu > ul {
+  width: 100%;
+  height: 15vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hamMenu > ul > li > a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 350ms;
+}
+
+.hamMenu > ul > li > a:focus {
+  font-weight: bold;
+  color: #000000;
+}
+
+.hamMenu > button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
   background: none;
   border: none;
   justify-content: flex-end;
@@ -95,27 +150,46 @@ header > button {
     display: block;
   }
 
-  header > ul > li > a {
+  nav > ul > li > a {
     color: #000000;
     text-decoration: none;
     font-size: 16px;
     transition: 350ms;
   }
 
-  header > ul > li {
+  nav > ul > li {
     display: none;
   }
 
-  header > ul > li:nth-child(1) {
+  nav > ul > li:nth-child(1) {
     display: block;
   }
 
-  #menusandwich {
+  #menuHamburger {
+    height: 100%;
+  }
+
+  #menuHamburger.active > #menuSandwich > #middlelayer {
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  #menuHamburger.active > #menuSandwich > #upperlayer {
+    transition: 0.5s ease-in-out;
+    transform: rotate(45deg) translateY(14px);
+  }
+
+  #menuHamburger.active > #menuSandwich > #lowerlayer {
+    transition: 0.5s ease-in-out;
+    transform: rotate(-45deg) translateY(-15px);
+  }
+
+  #menuSandwich {
+    height: 55%;
     display: flex;
     flex-direction: column;
-    height: 30px;
-    width: 60px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   #upperlayer {
@@ -142,18 +216,18 @@ header > button {
     border-radius: 8px;
   }
 
-  #menusandwich:hover #middlelayer {
+  /*  #menuSandwich:hover #middlelayer {
     transition: 0.3s ease-in-out;
     opacity: 0;
   }
 
-  #menusandwich:hover #upperlayer {
+  #menuSandwich:hover #upperlayer {
     transition: 0.5s ease-in-out;
     transform: rotate(45deg) translateY(14px);
   }
 
-  #menusandwich:hover #lowerlayer {
+  #menuSandwich:hover #lowerlayer {
     transition: 0.5s ease-in-out;
     transform: rotate(-45deg) translateY(-14px);
-  }
+  }*/
 }

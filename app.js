@@ -1,7 +1,7 @@
-let themeToggle = document.getElementById("themeToggle");
+/*let themeToggle = document.getElementById("themeToggle");
 console.log(themeToggle);
 let bodyTheme = document.getElementsByTagName("body");
-console.log(bodyTheme);
+console.log(bodyTheme);*/
 
 /*themeToggle.addEventListener('click', () => {
     if () {
@@ -9,6 +9,11 @@ console.log(bodyTheme);
     }
 })*/
 
-/*let hambMenu = document.getElementById("menuHamburger");
-hambMenu.addEventListener('click' () => {
-})*/
+let hambMenu = document.getElementById("menuHamburger");
+console.log(hambMenu);
+let menuHamburger = document.querySelector(".hamMenu");
+console.log(menuHamburger);
+hambMenu.addEventListener("click", () => {
+  hambMenu.classList.toggle("active");
+  menuHamburger.classList.toggle("active");
+});

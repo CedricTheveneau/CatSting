@@ -154,3 +154,9 @@
   text-transform: capitalize;
   transition: 3000ms;
 }
+
+@media screen and (max-width: 967px) {
+  #racesBox {
+    order: 2;
+  }
+}

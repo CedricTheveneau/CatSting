@@ -10,10 +10,10 @@ hambMenu.addEventListener("click", () => {
 // Dark mode
 
 let darkMode = () => {
-  let themeToggleGlobal = document.querySelectorAll(".themeToggles");
-  let suns = document.querySelectorAll(".sun");
-  let moons = document.querySelectorAll(".moon");
-  let bodyTheme = document.getElementsByTagName("body");
+  const themeToggleGlobal = document.querySelectorAll(".themeToggles");
+  const suns = document.querySelectorAll(".sun");
+  const moons = document.querySelectorAll(".moon");
+  const bodyTheme = document.getElementsByTagName("body");
   let preferedTheme;
   let togglingDark = () => {
     themeToggleGlobal.forEach((toggle) => {
@@ -33,9 +33,8 @@ let darkMode = () => {
   };
   togglingDark();
   let checkCookie = () => {
-    let subbed = document.cookie.substring(6);
+    const subbed = document.cookie.substring(6);
     console.log(subbed);
-
     if (subbed == "") {
       preferedTheme = document.querySelector("body").getAttribute("class");
       document.cookie = `theme=${preferedTheme}; path=/; secure`;

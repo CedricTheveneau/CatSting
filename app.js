@@ -27,8 +27,12 @@ themeToggleGlobal.forEach((toggle) => {
     moons[0].classList.toggle("hide");
     suns[1].classList.toggle("hide");
     moons[1].classList.toggle("hide");
+    let preferedTheme = document.querySelector("body").getAttribute("class");
+    document.cookie = `theme=${preferedTheme}; path=/; secure`;
   });
 });
+
+//if (document.querySelector("body").getAttribute("class") === preferedTheme)
 
 // Cookies to save preferences over light/dark mode
 

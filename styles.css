@@ -34,7 +34,7 @@ header {
 }
 
 .darkMode > header > nav > ul > li.active > a::before {
-  background-color: #000000;
+  background-color: #1c1b1b;
   transition: 500ms;
 }
 

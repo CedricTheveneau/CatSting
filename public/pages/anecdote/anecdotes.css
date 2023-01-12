@@ -146,7 +146,42 @@ p {
 
 .moreAnecdotes {
   width: 90%;
-  height: 50vh;
+  min-height: 50vh;
   margin: auto;
-  background-color: #e54a1b;
+  margin-bottom: 20px;
+}
+
+/*? Inline disposition*/
+.moreAnecdotes.inline {
+  display: grid;
+  gap: 20px;
+}
+
+/*? Grid disposition*/
+.moreAnecdotes.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 43% 43%;
+  gap: 14% 4%;
+}
+
+.moreAnecdotes > .tinyAnecdote {
+  background-color: #343434;
+  min-height: 20vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moreAnecdotes > .tinyAnecdote > h3 {
+  color: #ff7f57;
+  font-size: 18px;
+}
+
+.moreAnecdotes > .tinyAnecdote > p {
+  color: #ffffff;
+  font-size: 25px;
+  transition: 3000ms;
 }

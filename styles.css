@@ -16,7 +16,13 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -172,7 +178,7 @@ li.active {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .hide-desktop {

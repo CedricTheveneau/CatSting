@@ -20,3 +20,10 @@ let anecdotes = () => {
   });
 };
 anecdotes();
+
+// Display more anecdotes
+let showMore = document.getElementById("showMore");
+let anecdotesContainer = document.querySelector(".moreAnecdotes");
+showMore.addEventListener("click", () => {
+  anecdotesContainer.classList.toggle("hide");
+});

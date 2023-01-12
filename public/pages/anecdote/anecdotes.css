@@ -16,7 +16,7 @@
   background-color: #ff7f57;
   border: none;
   border-radius: 10px;
-  min-height: 35px;
+  height: 35px;
   min-width: 255px;
   cursor: pointer;
   transition: 250ms;
@@ -41,6 +41,27 @@
 .darkMode > main > #anecdoteContainer > #anecdoteBox > p {
   color: #ffffff;
   transition: 3000ms;
+}
+
+.darkMode > main > .options > button {
+  color: #000000;
+  transition: 1000ms;
+}
+
+.darkMode > main > .options > .displayOptions > svg {
+  cursor: pointer;
+  stroke: #343434;
+  transition: 500ms;
+}
+
+.darkMode > main > .options > .displayOptions > svg:hover {
+  cursor: pointer;
+  stroke: #e54a1b;
+}
+
+.darkMode > main > .options > .displayOptions > svg:focus {
+  cursor: pointer;
+  stroke: #e54a1b;
 }
 
 #anecdoteBox {
@@ -71,4 +92,61 @@ p {
 #anecdoteBox > #anecdote {
   padding-inline: 20px;
   padding-block: 10px;
+}
+
+.options {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options > button {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #ff7f57;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+  min-width: 220px;
+  cursor: pointer;
+  transition: 250ms;
+  transition: color 1000ms;
+}
+
+.options > button:hover {
+  color: #ffffff;
+  background-color: #e54a1b;
+}
+
+.options > .displayOptions {
+  min-width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options > .displayOptions > svg {
+  cursor: pointer;
+  stroke: #000000;
+  transition: 500ms;
+}
+
+.options > .displayOptions > svg:hover {
+  cursor: pointer;
+  stroke: #e54a1b;
+}
+
+.options > .displayOptions > svg:focus {
+  cursor: pointer;
+  stroke: #e54a1b;
+}
+
+.moreAnecdotes {
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+  background-color: #e54a1b;
 }

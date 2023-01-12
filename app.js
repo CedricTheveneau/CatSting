@@ -12,18 +12,15 @@ hambMenu.addEventListener("click", () => {
 //? Working V2
 
 let themeToggleGlobal = document.querySelectorAll(".themeToggles");
-console.log(themeToggleGlobal);
 let suns = document.querySelectorAll(".sun");
-console.log(suns);
 let moons = document.querySelectorAll(".moon");
-console.log(moons);
 let bodyTheme = document.getElementsByTagName("body");
 themeToggleGlobal.forEach((toggle) => {
   toggle.addEventListener("click", () => {
     // bodyTheme[0] represents the body tag itself, not the object body as a whole
     bodyTheme[0].classList.toggle("darkMode");
     bodyTheme[0].classList.toggle("lightMode");
-    suns[0].classList.toggle("hide");
+    suns.classList.toggle("hide");
     moons[0].classList.toggle("hide");
     suns[1].classList.toggle("hide");
     moons[1].classList.toggle("hide");

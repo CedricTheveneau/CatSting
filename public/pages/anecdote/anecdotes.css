@@ -46,7 +46,7 @@
 #anecdoteBox {
   background-color: #ededed;
   border-radius: 10px;
-  height: 25vh;
+  min-height: 35vh;
   width: 50vw;
   min-width: 255px;
   display: flex;
@@ -66,4 +66,9 @@ p {
   font-style: italic;
   text-transform: capitalize;
   transition: 3000ms;
+}
+
+#anecdoteBox > #anecdote {
+  padding-inline: 20px;
+  padding-block: 10px;
 }

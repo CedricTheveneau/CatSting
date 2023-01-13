@@ -1,20 +1,20 @@
 // Fetch anecdotes
 let anecdotes = () => {
   let fetchAnecdotes = () => {
-    let anecdoteBox = document.getElementById("anecdote");
+    const anecdoteBox = document.getElementById("anecdote");
     let anecdote;
-    let xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open("GET", "https://catfact.ninja/fact", false);
     xhr.onload = function () {
       if (xhr.status === 200) {
-        let response = JSON.parse(xhr.responseText);
+        const response = JSON.parse(xhr.responseText);
         anecdote = response.fact;
       }
     };
     xhr.send();
     anecdoteBox.innerHTML = anecdote;
   };
-  let showMeTrivia = document.getElementById("showMeTrivia");
+  const showMeTrivia = document.getElementById("showMeTrivia");
   showMeTrivia.addEventListener("click", () => {
     fetchAnecdotes();
   });
@@ -23,8 +23,8 @@ anecdotes();
 
 // Display more anecdotes
 let showMoreTrivia = () => {
-  let showMore = document.getElementById("showMore");
-  let anecdotesContainer = document.querySelector(".moreAnecdotes");
+  const showMore = document.getElementById("showMore");
+  const anecdotesContainer = document.querySelector(".moreAnecdotes");
   showMore.addEventListener("click", () => {
     anecdotesContainer.classList.toggle("hide");
   });
@@ -33,9 +33,9 @@ showMoreTrivia();
 
 // Toggles between each display type
 let toggleDisplay = () => {
-  let displayContainer = document.querySelector(".moreAnecdotes");
-  let svgGrid = document.querySelector("#gridBtn");
-  let svgInline = document.querySelector("#inlineBtn");
+  const displayContainer = document.querySelector(".moreAnecdotes");
+  const svgGrid = document.querySelector("#gridBtn");
+  const svgInline = document.querySelector("#inlineBtn");
   svgGrid.addEventListener("click", () => {
     displayContainer.classList.add("grid");
     svgGrid.classList.add("active");
@@ -51,14 +51,14 @@ toggleDisplay();
 
 // Random anecdote push in DOM
 let randomAnecdote = () => {
-  let displayContainer = document.querySelector(".moreAnecdotes");
+  const displayContainer = document.querySelector(".moreAnecdotes");
   let anecdote;
   let fetchRandomAnecdote = () => {
-    let xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open("GET", "https://catfact.ninja/facts", false);
     xhr.onload = function () {
       if (xhr.status === 200) {
-        let response = JSON.parse(xhr.responseText);
+        const response = JSON.parse(xhr.responseText);
         anecdote = response.data;
       }
     };

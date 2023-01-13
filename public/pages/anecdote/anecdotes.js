@@ -27,3 +27,19 @@ let anecdotesContainer = document.querySelector(".moreAnecdotes");
 showMore.addEventListener("click", () => {
   anecdotesContainer.classList.toggle("hide");
 });
+
+// Toggles between each display type
+let displayContainer = document.querySelector(".moreAnecdotes");
+let svgGrid = document.querySelector("#gridBtn");
+let svgInline = document.querySelector("#inlineBtn");
+svgGrid.addEventListener("click", () => {
+  displayContainer.classList.add("grid");
+  svgGrid.classList.add("active");
+  svgInline.classList.remove("active");
+});
+
+svgInline.addEventListener("click", () => {
+  displayContainer.classList.remove("grid");
+  svgGrid.classList.remove("active");
+  svgInline.classList.add("active");
+});

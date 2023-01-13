@@ -1,4 +1,4 @@
-// Fetch anecdotes
+// Fetch anecdotes and displays a random one on click
 let anecdotes = () => {
   let fetchAnecdotes = () => {
     const anecdoteBox = document.getElementById("anecdote");
@@ -50,6 +50,7 @@ let toggleDisplay = () => {
 toggleDisplay();
 
 // Random anecdote push in DOM
+// Fetches a random anecdote
 let randomAnecdote = () => {
   const displayContainer = document.querySelector(".moreAnecdotes");
   let anecdote;
@@ -65,7 +66,7 @@ let randomAnecdote = () => {
     xhr.send();
   };
   fetchRandomAnecdote();
-
+  // Pushes the filled up block into the DOM
   let pushRandomAnecdote = () => {
     anecdote.forEach((element) => {
       displayContainer.innerHTML += `<div class="tinyAnecdote">

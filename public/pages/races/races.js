@@ -20,6 +20,10 @@ let breedsSelection = () => {
           document.querySelector(
             "#races"
           ).innerHTML += `<div class="raceSelection">${breed}</div>`;
+          // Pushes in DOM each fetched country
+          document.querySelector(
+            "#country"
+          ).innerHTML += `<option value="${country}">${country}</option>`;
         });
         // Updates results
         document.querySelector("#resultsNum").innerHTML =

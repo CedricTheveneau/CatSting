@@ -64,6 +64,61 @@
   stroke: #e54a1b;
 }
 
+.darkMode > main > .moreAnecdotes > .tinyAnecdote {
+  background-color: #343434;
+  min-height: 20vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  transition: 500ms;
+}
+
+.darkMode > main > .moreAnecdotes > .tinyAnecdote > .tinyAnecdotes {
+  color: #ffffff;
+  font-size: 25px;
+  max-width: calc(100% - 250px);
+  transition: 3000ms;
+  position: absolute;
+  right: 20px;
+  padding-left: 10px;
+  border-left: 2px solid #ffffff;
+  transition: 1000ms;
+}
+
+.darkMode > main > .moreAnecdotes.grid > .tinyAnecdote {
+  background-color: #343434;
+  min-height: 20vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  transition: 500ms;
+}
+
+.darkMode > main > .moreAnecdotes.grid > .tinyAnecdote > .tinyAnecdotes {
+  color: #ffffff;
+  font-size: 25px;
+  transition: 3000ms;
+  position: initial;
+  border: 0;
+  padding: 0;
+  right: 0;
+  max-width: 100%;
+  padding-right: 20px;
+  transition: 3000ms;
+}
+
+.darkMode > main > .moreAnecdotes > .tinyAnecdote > p {
+  color: #ffffff;
+  font-size: 25px;
+  transition: 3000ms;
+}
+
 #anecdoteBox {
   background-color: #ededed;
   border-radius: 10px;
@@ -168,7 +223,7 @@ p {
 }
 
 .moreAnecdotes > .tinyAnecdote {
-  background-color: #343434;
+  background-color: #ededed;
   min-height: 20vh;
   border-radius: 10px;
   display: flex;
@@ -180,14 +235,14 @@ p {
 }
 
 .moreAnecdotes > .tinyAnecdote > .tinyAnecdotes {
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   max-width: calc(100% - 250px);
   transition: 3000ms;
   position: absolute;
   right: 20px;
   padding-left: 10px;
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #000000;
 }
 
 /*? Grid disposition*/
@@ -199,7 +254,7 @@ p {
 }
 
 .moreAnecdotes.grid > .tinyAnecdote {
-  background-color: #343434;
+  background-color: #ededed;
   min-height: 20vh;
   border-radius: 10px;
   display: flex;
@@ -209,7 +264,7 @@ p {
 }
 
 .moreAnecdotes.grid > .tinyAnecdote > .tinyAnecdotes {
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   transition: 3000ms;
   position: initial;
@@ -226,7 +281,7 @@ p {
 }
 
 .moreAnecdotes > .tinyAnecdote > p {
-  color: #ffffff;
+  color: #000000;
   font-size: 25px;
   transition: 3000ms;
 }

@@ -1,7 +1,7 @@
 // Hamburger menu
 
-let hambMenu = document.getElementById("menuHamburger");
-let menuHamburger = document.querySelector(".hamMenu");
+const hambMenu = document.getElementById("menuHamburger");
+const menuHamburger = document.querySelector(".hamMenu");
 hambMenu.addEventListener("click", () => {
   hambMenu.classList.toggle("active");
   menuHamburger.classList.toggle("active");

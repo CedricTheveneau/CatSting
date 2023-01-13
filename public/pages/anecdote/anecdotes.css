@@ -30,28 +30,28 @@
 
 .darkMode > main > #anecdoteContainer > button {
   color: #000000;
-  transition: 1000ms;
+  transition: color 1000ms;
 }
 
 .darkMode > main > #anecdoteContainer > #anecdoteBox {
   background-color: #343434;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 .darkMode > main > #anecdoteContainer > #anecdoteBox > p {
   color: #ffffff;
-  transition: 3000ms;
+  transition: color 3000ms;
 }
 
 .darkMode > main > .options > button {
   color: #000000;
-  transition: 1000ms;
+  transition: color 1000ms;
 }
 
 .darkMode > main > .options > .displayOptions > svg {
   cursor: pointer;
   stroke: #343434;
-  transition: 500ms;
+  transition: stroke 500ms;
 }
 
 .darkMode > main > .options > .displayOptions > svg:hover {
@@ -74,7 +74,7 @@
   position: relative;
   justify-content: space-evenly;
   padding-left: 20px;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 .darkMode > main > .moreAnecdotes > .tinyAnecdote > .tinyAnecdotes {
@@ -86,7 +86,7 @@
   right: 20px;
   padding-left: 10px;
   border-left: 2px solid #ffffff;
-  transition: 1000ms;
+  transition: color 1000ms;
 }
 
 .darkMode > main > .moreAnecdotes.grid > .tinyAnecdote {
@@ -97,7 +97,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 .darkMode > main > .moreAnecdotes.grid > .tinyAnecdote > .tinyAnecdotes {
@@ -110,13 +110,13 @@
   right: 0;
   max-width: 100%;
   padding-right: 20px;
-  transition: 3000ms;
+  transition: color 3000ms;
 }
 
 .darkMode > main > .moreAnecdotes > .tinyAnecdote > p {
   color: #ffffff;
   font-size: 25px;
-  transition: 3000ms;
+  transition: color 3000ms;
 }
 
 #anecdoteBox {
@@ -141,7 +141,7 @@ p {
   color: #000000;
   font-style: italic;
   text-transform: capitalize;
-  transition: 3000ms;
+  transition: color 3000ms;
 }
 
 #anecdoteBox > #anecdote {
@@ -167,7 +167,6 @@ p {
   height: 35px;
   min-width: 220px;
   cursor: pointer;
-  transition: 250ms;
   transition: color 1000ms;
 }
 
@@ -186,7 +185,7 @@ p {
 .options > .displayOptions > svg {
   cursor: pointer;
   stroke: #000000;
-  transition: 500ms;
+  transition: stroke 500ms;
 }
 
 .options > .displayOptions > svg:hover {
@@ -238,7 +237,7 @@ p {
   color: #000000;
   font-size: 25px;
   max-width: calc(100% - 250px);
-  transition: 3000ms;
+  transition: color 3000ms;
   position: absolute;
   right: 20px;
   padding-left: 10px;
@@ -266,7 +265,7 @@ p {
 .moreAnecdotes.grid > .tinyAnecdote > .tinyAnecdotes {
   color: #000000;
   font-size: 25px;
-  transition: 3000ms;
+  transition: color 3000ms;
   position: initial;
   border: 0;
   padding: 0;
@@ -283,5 +282,5 @@ p {
 .moreAnecdotes > .tinyAnecdote > p {
   color: #000000;
   font-size: 25px;
-  transition: 3000ms;
+  transition: color 3000ms;
 }

@@ -10,27 +10,27 @@
 
 .darkMode > main > #raceContainer > #racesBox {
   background-color: #343434;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 .darkMode > main > #raceContainer > #racesBox > #results > p {
   color: #ffffff;
-  transition: 500ms;
+  transition: color 500ms;
 }
 
 .darkMode > main > #raceContainer > #racesBox > #races > .raceSelection {
   color: #ffffff;
-  transition: 1000ms;
+  transition: color 1000ms;
 }
 
 .darkMode > main > #raceContainer > #infoBox {
   background-color: #343434;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 .darkMode > main > #raceContainer > #infoBox > p {
   color: #ffffff;
-  transition: 3000ms;
+  transition: color 3000ms;
 }
 
 #racesBox {
@@ -136,7 +136,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  transition: 500ms;
+  transition: background-color 500ms;
 }
 
 #infoBox > h3 {
@@ -152,7 +152,7 @@
   color: #000000;
   font-style: italic;
   text-transform: capitalize;
-  transition: 3000ms;
+  transition: color 3000ms;
 }
 
 @media screen and (max-width: 967px) {

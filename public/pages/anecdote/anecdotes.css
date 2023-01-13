@@ -182,6 +182,7 @@ p {
 .moreAnecdotes > .tinyAnecdote > .tinyAnecdotes {
   color: #ffffff;
   font-size: 25px;
+  max-width: calc(100% - 250px);
   transition: 3000ms;
   position: absolute;
   right: 20px;
@@ -215,6 +216,8 @@ p {
   border: 0;
   padding: 0;
   right: 0;
+  max-width: 100%;
+  padding-right: 20px;
 }
 
 .moreAnecdotes > .tinyAnecdote > h3 {

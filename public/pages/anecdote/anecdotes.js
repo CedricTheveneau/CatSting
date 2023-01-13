@@ -22,24 +22,59 @@ let anecdotes = () => {
 anecdotes();
 
 // Display more anecdotes
-let showMore = document.getElementById("showMore");
-let anecdotesContainer = document.querySelector(".moreAnecdotes");
-showMore.addEventListener("click", () => {
-  anecdotesContainer.classList.toggle("hide");
-});
+let showMoreTrivia = () => {
+  let showMore = document.getElementById("showMore");
+  let anecdotesContainer = document.querySelector(".moreAnecdotes");
+  showMore.addEventListener("click", () => {
+    anecdotesContainer.classList.toggle("hide");
+  });
+};
+showMoreTrivia();
 
 // Toggles between each display type
-let displayContainer = document.querySelector(".moreAnecdotes");
-let svgGrid = document.querySelector("#gridBtn");
-let svgInline = document.querySelector("#inlineBtn");
-svgGrid.addEventListener("click", () => {
-  displayContainer.classList.add("grid");
-  svgGrid.classList.add("active");
-  svgInline.classList.remove("active");
-});
+let toggleDisplay = () => {
+  let displayContainer = document.querySelector(".moreAnecdotes");
+  let svgGrid = document.querySelector("#gridBtn");
+  let svgInline = document.querySelector("#inlineBtn");
+  svgGrid.addEventListener("click", () => {
+    displayContainer.classList.add("grid");
+    svgGrid.classList.add("active");
+    svgInline.classList.remove("active");
+  });
+  svgInline.addEventListener("click", () => {
+    displayContainer.classList.remove("grid");
+    svgGrid.classList.remove("active");
+    svgInline.classList.add("active");
+  });
+};
+toggleDisplay();
 
-svgInline.addEventListener("click", () => {
-  displayContainer.classList.remove("grid");
-  svgGrid.classList.remove("active");
-  svgInline.classList.add("active");
-});
+// Random anecdote push in DOM
+let randomAnecdote = () => {
+  let displayContainer = document.querySelector(".moreAnecdotes");
+  let anecdote;
+  let fetchRandomAnecdote = () => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://catfact.ninja/facts", false);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        let response = JSON.parse(xhr.responseText);
+        anecdote = response.data;
+      }
+    };
+    xhr.send();
+  };
+  fetchRandomAnecdote();
+
+  let pushRandomAnecdote = () => {
+    anecdote.forEach((element) => {
+      displayContainer.innerHTML += `<div class="tinyAnecdote">
+    <h3>Anecdote</h3>
+    <p>Did you know ?</p>
+    <p class="tinyAnecdotes">${element.fact}</p>
+  </div>`;
+    });
+  };
+  pushRandomAnecdote();
+};
+randomAnecdote();
